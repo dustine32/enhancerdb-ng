@@ -3,6 +3,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MaterialModule } from './material.module';
 
 import { NoctuaDirectivesModule } from '@noctua/directives/directives';
 import { NoctuaPipesModule } from '@noctua/pipes/pipes.module';
@@ -16,7 +17,8 @@ import { NoctuaPipesModule } from '@noctua/pipes/pipes.module';
         FlexLayoutModule,
 
         NoctuaDirectivesModule,
-        NoctuaPipesModule
+        NoctuaPipesModule,
+        MaterialModule
     ],
     exports  : [
         CommonModule,
@@ -26,7 +28,8 @@ import { NoctuaPipesModule } from '@noctua/pipes/pipes.module';
         FlexLayoutModule,
 
         NoctuaDirectivesModule,
-        NoctuaPipesModule
+        NoctuaPipesModule,
+        MaterialModule
     ]
 })
 export class NoctuaSharedModule

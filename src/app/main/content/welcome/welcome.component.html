@@ -1,5 +1,21 @@
 <div class="page-layout blank p-24" noctuaPerfectScrollbar>
 
-    <h2>{{'SAMPLE.HELLO' | translate}}</h2>
 
+  <form name="geneForm" [formGroup]="geneForm" class="" fxLayout="column" fxFlex="100">
+    <mat-form-field class="w-100-p">
+      <input matInput name="geneId" formControlName="geneId" placeholder="Enter Gene (UniProtID)" required />
+    </mat-form-field>
+
+    
+  </form>
+  <button mat-raised-button (click)="search()">Search</button>
+
+  <div>
+    <!-- [columnMode]="'force'" -->
+    <ngx-datatable [rows]="rows" [columns]="columns" [columnMode]="'force'">
+    </ngx-datatable>
+  </div>
+  <div id='test'>
+
+  </div>
 </div>

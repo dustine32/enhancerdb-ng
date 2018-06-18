@@ -28,6 +28,7 @@ export class NoctuaContentComponent implements OnDestroy
         private router: Router,
         private activatedRoute: ActivatedRoute,
         private noctuaConfig: NoctuaConfigService
+        
     )
     {
         this.router.events.pipe(

@@ -6,6 +6,9 @@ import { TranslateModule } from '@ngx-translate/core';
 import { NoctuaSharedModule } from '@noctua/shared.module';
 
 import { NoctuaWelcomeComponent } from './welcome.component';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { WelcomeService } from './welcome.service';
+
 
 const routes = [
     {
@@ -23,11 +26,16 @@ const routes = [
 
         TranslateModule,
 
+        NoctuaSharedModule,
+        NgxDatatableModule,
         NoctuaSharedModule
     ],
     exports: [
         NoctuaWelcomeComponent
-    ]
+    ],
+    providers: [
+        WelcomeService,
+    ],
 })
 
 export class NoctuaWelcomeModule {
